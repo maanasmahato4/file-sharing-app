@@ -7,6 +7,7 @@ import routes from './routes/index.js';
 import globalErrorHandler from './utils/globalCatch.js';
 import { PORT } from './utils/contants.js';
 import DatabaseConnection from './database/database.js';
+import createDirectories from './utils/createFolders.js';
 
 dotenv.config();
 const app = express();
@@ -24,9 +25,11 @@ app.use(
 	})
 );
 app.use(express.json());
+app.use('/yoho', (req, res) => res.status(200).json({ success: true }));
 
 app.listen(PORT, () => {
 	console.log(`server running at http://localhost:${PORT}`);
+	createDirectories();
 	DatabaseConnection();
 	app.use('/api', routes);
 	// global error handler

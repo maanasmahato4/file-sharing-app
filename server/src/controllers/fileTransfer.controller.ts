@@ -7,7 +7,7 @@ export async function downloadFile(
 	res: Response
 ): Promise<Response> {
 	try {
-		return res.status(200);
+		return res.status(200).json({ success: true });
 	} catch (error) {
 		logger.error(error);
 		return res.status(500).json({ error });
@@ -19,7 +19,8 @@ export async function storeAndShareFile(
 	res: Response
 ): Promise<Response> {
 	try {
-		return res.status(200);
+		console.log(req.file?.originalname);
+		return res.status(200).json({ file: req.file?.originalname });
 	} catch (error) {
 		logger.error(error);
 		return res.status(500).json({ error });

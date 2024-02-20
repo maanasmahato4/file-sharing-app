@@ -1,9 +1,18 @@
 import { Router } from 'express';
+import {
+	storeAndShareFile,
+	downloadFile
+} from '../controllers/fileTransfer.controller.js';
+import { sendMail } from '../controllers/mailer.controller.js';
+import validateResource from '../middlewares/validateResource.middleware.js';
+import { senderSchemaObject } from '../schema/sender.schema.js';
+import upload from '../middlewares/validateFile.middleware.js';
 
-export default function Routes(): Router {
-	const router = Router();
+const router = Router();
 
-	router.post('/v1/file').get('v1/file').post('/v1/sender');
+router
+	.post('/v1/file', upload.single('image'), storeAndShareFile)
+	.get('/v1/file', downloadFile)
+	.post('/v1/sender', validateResource(senderSchemaObject), sendMail);
 
-	return router;
-}
+export default router;

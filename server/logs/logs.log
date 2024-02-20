@@ -1,0 +1,74 @@
+2024-02-20 20:00:51 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:16:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-02-20 20:22:38 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:16:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-02-20 20:25:30 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:18:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-02-20 20:25:48 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:17:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-02-20 20:26:12 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:18:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-02-20 20:26:46 error: ENOENT: no such file or directory, open 'E:\file sharing app\server\uploads\1708440106613-495.42759896687795-GettyImages-175009379.jpg'
+Error: ENOENT: no such file or directory, open 'E:\file sharing app\server\uploads\1708440106613-495.42759896687795-GettyImages-175009379.jpg'
+2024-02-20 20:32:30 error: Unexpected field
+MulterError: Unexpected field
+    at fileFilter (file:///E:/file%20sharing%20app/server/src/utils/multer.ts:18:12)
+    at wrappedFileFilter (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (E:\file sharing app\server\node_modules\.pnpm\multer@1.4.5-lts.1\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (E:\file sharing app\server\node_modules\.pnpm\streamsearch@1.1.0\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (E:\file sharing app\server\node_modules\.pnpm\busboy@1.6.0\node_modules\busboy\lib\types\multipart.js:567:19)

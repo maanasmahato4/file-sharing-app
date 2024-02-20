@@ -2,9 +2,9 @@ import multer, { MulterError } from 'multer';
 import path from 'path';
 import { Request } from 'express';
 
-const diskStorage = multer.diskStorage({
+export const diskStorage = multer.diskStorage({
 	destination: (req, file, cb) => {
-		cb(null, 'uploads');
+		cb(null, './uploads');
 	},
 	filename: (req, file, cb) => {
 		const uniqueFileName = `${Date.now()}-${Math.random() * 1000}-${file.originalname}`;
@@ -12,14 +12,15 @@ const diskStorage = multer.diskStorage({
 	}
 });
 
-const fileFilter = (
+export const fileFilter = (
 	req: Request,
 	file: Express.Multer.File,
 	cb: multer.FileFilterCallback
 ) => {
-	const allowedExtensions = ['.gzip', '.zip'];
+	console.log(file);
+	const allowedExtensions = ['.gzip', '.zip', '.png', '.jpg'];
 	const extName = path.extname(file.originalname);
-	if (allowedExtensions.includes(extName)) {
+	if (!allowedExtensions.includes(extName)) {
 		cb(
 			new MulterError(
 				'LIMIT_UNEXPECTED_FILE',
@@ -30,10 +31,3 @@ const fileFilter = (
 		cb(null, true);
 	}
 };
-
-const upload = multer({
-	storage: diskStorage,
-	fileFilter: fileFilter
-});
-
-export default upload;
