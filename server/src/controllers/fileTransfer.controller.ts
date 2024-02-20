@@ -5,9 +5,17 @@ import logger from '../utils/logger.js';
 export async function downloadFile(
 	req: Request,
 	res: Response
-): Promise<Response> {
+): Promise<Response | void> {
 	try {
-		return res.status(200).json({ success: true });
+		const { id } = req.params;
+		if (!id) {
+			return res.status(404).json({ error: 'sender id not found' });
+		}
+		/* const senderData = await Sender.findOne({ where: { id: id } });
+		if (!senderData) {
+			return res.status(404).json({ error: 'no file found' });
+		}
+		res.status(200).download(senderData.filePath); */
 	} catch (error) {
 		logger.error(error);
 		return res.status(500).json({ error });
@@ -19,8 +27,10 @@ export async function storeAndShareFile(
 	res: Response
 ): Promise<Response> {
 	try {
-		console.log(req.file?.originalname);
-		return res.status(200).json({ file: req.file?.originalname });
+		if (!req.file) {
+			return res.status(404).json({ error: 'file not found' });
+		}
+		return res.status(200).json({ file: req.file.path });
 	} catch (error) {
 		logger.error(error);
 		return res.status(500).json({ error });
